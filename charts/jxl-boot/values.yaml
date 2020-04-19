@@ -4,7 +4,7 @@
 
 image:
   repository: gcr.io/jenkinsxio-labs/jxlabs-nos-jxl
-  tag: jxl-boot-0.0.183-jxlabs.nos.staging.0d3d4ce-dev.327e939-dev+0d3d4ce-dev+0d3d4ce-dev+cbd3e65-dev+0d3d4ce-dev+aab3d7e
+  tag: 0.0.183-dev+ad3bc0e
   pullPolicy: IfNotPresent
 
 serviceAccount:
