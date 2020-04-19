@@ -5,10 +5,10 @@ entries:
     appVersion: 0.0.183
     created: "2020-04-18T23:04:11.943769+02:00"
     description: A Helm chart for Kubernetes
-    digest: 0a232a550bf8db311dccae2a246606e57dfa54153a1a24a74471e36171f17413
+    digest: e14d32b41f86dbfcc3e3681fca1cd555aa58408757819fcff421d8ae32812b73
     icon: https://rawcdn.githack.com/jenkins-x/jx-docs/e9afbc5c933c8f2d004cb041e2fa33b391a8fd23/static/images/logo/jenkinsx-ico-black.png
     name: jxl-boot
     urls:
-    - https://github.com/nxmatic/jxlabs-nos-jxl/releases/download/jxl-boot-0.0.183-jxlabs.nos.staging.0d3d4ce/jxl-boot-0.0.183-jxlabs.nos.staging.0d3d4ce.tgz
-    version: 0.0.183-jxlabs-nos-staging.0d3d4ce
+    - https://github.com/nxmatic/jxlabs-nos-jxl/releases/download/jxl-boot-0.0.183-dev+ad3bc0e/jxl-boot-0.0.183-dev+ad3bc0e.tgz
+    version: 0.0.183-dev+ad3bc0e 
 generated: "2020-04-18T23:04:11.552743+02:00"
