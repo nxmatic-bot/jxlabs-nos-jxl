@@ -1,0 +1,121 @@
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-75lgl-15[0m stage [32mchart[0m and container [32mstep-credential-initializer-bxmj9[0m
+{"level":"info","ts":1590305964.318607,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1590305964.3211622,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-75lgl-15[0m stage [32mchart[0m and container [32mstep-working-dir-initializer-twnrq[0m
+{"level":"info","ts":1590305967.417094,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1590305967.4185982,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-75lgl-15[0m stage [32mchart[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-75lgl-15[0m stage [32mchart[0m and container [32mstep-git-source-nuxeo-jxlabs-nos-jxl-master-rel-75lgl-7vdh9[0m
+{"level":"info","ts":1590305994.8041713,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1590305997.0647023,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/nuxeo/**labs-nos-**l.git @ v0.0.198 in path /workspace/source"}
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-75lgl-15[0m stage [32mchart[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:4698e178777930663d1f2f9160616b88841487a8
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-75lgl-15[0m stage [32mchart[0m and container [32mstep-container-build[0m
+E0524 07:40:05.714521      10 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+[36mINFO[0m[0003] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0003] Retrieving image manifest golang:1.14.2      
+E0524 07:40:06.094202      10 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+E0524 07:40:06.101594      10 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+[36mINFO[0m[0004] Retrieving image manifest golang:1.14.2      
+[36mINFO[0m[0004] Retrieving image manifest gcr.io/build-**-prod/**labs-nos/**l-base:latest 
+[36mINFO[0m[0005] Retrieving image manifest gcr.io/build-**-prod/**labs-nos/**l-base:latest 
+[36mINFO[0m[0005] Built cross stage deps: map[0:[/out/**l]]    
+[36mINFO[0m[0005] Retrieving image manifest golang:1.14.2      
+[36mINFO[0m[0006] Retrieving image manifest golang:1.14.2      
+[36mINFO[0m[0006] Executing 0 build triggers                   
+[36mINFO[0m[0006] Checking for cached layer gcr.io/build-**-prod/**labs-nos/**labs-nos-**l/cache:f76b4c9b955e9a30d7c2a6c4f876632e66c04666dfa2c9b65d8bda86c68b03ff... 
+[36mINFO[0m[0006] No cached layer found for cmd RUN mkdir /out 
+[36mINFO[0m[0006] Unpacking rootfs as cmd RUN mkdir /out requires it. 
+[36mINFO[0m[0030] RUN mkdir /out                               
+[36mINFO[0m[0030] Taking snapshot of full filesystem...        
+[36mINFO[0m[0063] Resolving 28117 paths                        
+[36mINFO[0m[0068] cmd: /bin/sh                                 
+[36mINFO[0m[0068] args: [-c mkdir /out]                        
+[36mINFO[0m[0068] Running: [/bin/sh -c mkdir /out]             
+[36mINFO[0m[0068] Taking snapshot of full filesystem...        
+[36mINFO[0m[0071] Resolving 28118 paths                        
+[36mINFO[0m[0075] Pushing layer gcr.io/build-**-prod/**labs-nos/**labs-nos-**l/cache:f76b4c9b955e9a30d7c2a6c4f876632e66c04666dfa2c9b65d8bda86c68b03ff to cache now 
+[36mINFO[0m[0075] RUN mkdir -p /go/src/github.com/jenkins-x-labs 
+[36mINFO[0m[0075] cmd: /bin/sh                                 
+[36mINFO[0m[0075] args: [-c mkdir -p /go/src/github.com/jenkins-x-labs] 
+[36mINFO[0m[0075] Running: [/bin/sh -c mkdir -p /go/src/github.com/jenkins-x-labs] 
+[36mINFO[0m[0075] Taking snapshot of full filesystem...        
+[36mINFO[0m[0082] Resolving 28120 paths                        
+[36mINFO[0m[0086] WORKDIR /go/src/github.com/jenkins-x-labs    
+[36mINFO[0m[0086] cmd: workdir                                 
+[36mINFO[0m[0086] Changed working directory to /go/src/github.com/jenkins-x-labs 
+[36mINFO[0m[0086] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0086] Pushing layer gcr.io/build-**-prod/**labs-nos/**labs-nos-**l/cache:fc353d2a888ee2d2578745469df96d50365f81fbaf76d1fed9b46dcac898a819 to cache now 
+[36mINFO[0m[0086] RUN git clone https://github.com/nxmatic/**labs-nos-**l.git **l &&   cd **l &&   git checkout **labs-nos &&   make linux &&   mv build/linux/**l /out/**l 
+[36mINFO[0m[0086] cmd: /bin/sh                                 
+[36mINFO[0m[0086] args: [-c git clone https://github.com/nxmatic/**labs-nos-**l.git **l &&   cd **l &&   git checkout **labs-nos &&   make linux &&   mv build/linux/**l /out/**l] 
+[36mINFO[0m[0086] Running: [/bin/sh -c git clone https://github.com/nxmatic/**labs-nos-**l.git **l &&   cd **l &&   git checkout **labs-nos &&   make linux &&   mv build/linux/**l /out/**l] 
+Cloning into '**l'...
+Branch '**labs-nos' set up to track remote branch '**labs-nos' from 'origin'.
+Switched to a new branch '**labs-nos'
+go mod download
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GO111MODULE=on go build -ldflags " -X github.com/jenkins-x-labs/**l/pkg/version.Version=0.0.198-dev+447662f -X github.com/jenkins-x-labs/**l/pkg/version.Revision='447662f' -X github.com/jenkins-x-labs/**l/pkg/version.Branch='**labs-nos' -X github.com/jenkins-x-labs/**l/pkg/version.BuildDate='20200524-07:41:29' -X github.com/jenkins-x-labs/**l/pkg/version.GoVersion='1.14.2' " -o build/linux/**l cmd/main.go
+chmod +x build/linux/**l
+[36mINFO[0m[0406] Taking snapshot of full filesystem...        
+[36mINFO[0m[0418] Resolving 154729 paths                       
+[36mINFO[0m[0974] Pushing layer gcr.io/build-**-prod/**labs-nos/**labs-nos-**l/cache:bfec1157341bb7d509cdf32f60c8f83c6dd081d1f26acca06f404946feab7438 to cache now 
+[36mINFO[0m[1053] Saving file out/**l for later use            
+[36mINFO[0m[1054] Deleting filesystem...                       
+[36mINFO[0m[1062] Retrieving image manifest gcr.io/build-**-prod/**labs-nos/**l-base:latest 
+[36mINFO[0m[1062] Retrieving image manifest gcr.io/build-**-prod/**labs-nos/**l-base:latest 
+[36mINFO[0m[1063] Executing 0 build triggers                   
+[36mINFO[0m[1063] cmd: EXPOSE                                  
+[36mINFO[0m[1063] Adding exposed port: 8080/tcp                
+[36mINFO[0m[1063] Checking for cached layer gcr.io/build-**-prod/**labs-nos/**labs-nos-**l/cache:6cb12491c214dd2dc1823eed2188866f75d45d665e377b60210d93c38cd25156... 
+[36mINFO[0m[1063] No cached layer found for cmd COPY --from=0 /out/**l /usr/local/bin/**l 
+[36mINFO[0m[1063] Unpacking rootfs as cmd COPY --from=0 /out/**l /usr/local/bin/**l requires it. 
+[36mINFO[0m[1099] EXPOSE 8080                                  
+[36mINFO[0m[1099] cmd: EXPOSE                                  
+[36mINFO[0m[1099] Adding exposed port: 8080/tcp                
+[36mINFO[0m[1099] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[1099] COPY --from=0 /out/**l /usr/local/bin/**l    
+[36mINFO[0m[1100] Resolving 1 paths                            
+[36mINFO[0m[1100] Taking snapshot of files...                  
+[36mINFO[0m[1103] Pushing layer gcr.io/build-**-prod/**labs-nos/**labs-nos-**l/cache:6cb12491c214dd2dc1823eed2188866f75d45d665e377b60210d93c38cd25156 to cache now 
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-75lgl-15[0m stage [32mchart[0m and container [32mstep-release-chart[0m
+rm -rf charts
+rm -rf **l-boot*.tgz
+sed -i -e "s/version:.*/version: 0.0.198/" Chart.yaml
+helm dependency build
+helm lint
+==> Linting .
+
+1 chart(s) linted, 0 chart(s) failed
+helm package .
+Successfully packaged chart and saved it to: /workspace/source/charts/**l-boot/**l-boot-0.0.198.tgz
+helm repo add **-labs gs://**labs-nos-charts/
+panic: new client: dialing: google: error getting credentials using GOOGLE_APPLICATION_CREDENTIALS environment variable: open /secrets/charts/credentials.json: no such file or directory
+
+goroutine 1 [running]:
+github.com/hayorov/helm-gcs/cmd/helm-gcs/cmd.init.4.func1()
+	/Users/jamesrawlings/go/src/github.com/hayorov/helm-gcs/cmd/helm-gcs/cmd/root.go:59 +0xa8
+github.com/spf13/cobra.(*Command).preRun(0xfce1a0)
+	/Users/jamesrawlings/go/pkg/mod/github.com/spf13/cobra@v0.0.5/command.go:856 +0x49
+github.com/spf13/cobra.(*Command).execute(0xfce1a0, 0xc0002309e0, 0x1, 0x1, 0xfce1a0, 0xc0002309e0)
+	/Users/jamesrawlings/go/pkg/mod/github.com/spf13/cobra@v0.0.5/command.go:792 +0x146
+github.com/spf13/cobra.(*Command).ExecuteC(0xfce920, 0xc000219f68, 0x942dfe, 0xfce920)
+	/Users/jamesrawlings/go/pkg/mod/github.com/spf13/cobra@v0.0.5/command.go:914 +0x2fc
+github.com/spf13/cobra.(*Command).Execute(...)
+	/Users/jamesrawlings/go/pkg/mod/github.com/spf13/cobra@v0.0.5/command.go:864
+github.com/hayorov/helm-gcs/cmd/helm-gcs/cmd.Execute()
+	/Users/jamesrawlings/go/src/github.com/hayorov/helm-gcs/cmd/helm-gcs/cmd/root.go:48 +0x32
+main.main()
+	/Users/jamesrawlings/go/src/github.com/hayorov/helm-gcs/cmd/helm-gcs/main.go:26 +0x20
+Error: looks like "gs://**labs-nos-charts/" is not a valid chart repository or cannot be reached: plugin "scripts/pull.sh" exited with error
+make: *** [release] Error 1
+[31m
+Pipeline failed on stage 'chart' : container 'step-release-chart'. The execution of the pipeline has stopped.[0m
