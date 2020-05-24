@@ -1,0 +1,23 @@
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-6mww4-11[0m stage [32mchart[0m and container [32mstep-credential-initializer-ckmq4[0m
+{"level":"info","ts":1590305201.877486,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1590305201.8785312,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-6mww4-11[0m stage [32mchart[0m and container [32mstep-working-dir-initializer-rqgrm[0m
+{"level":"info","ts":1590305202.6219933,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1590305202.62582,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-6mww4-11[0m stage [32mchart[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-6mww4-11[0m stage [32mchart[0m and container [32mstep-git-source-nuxeo-jxlabs-nos-jxl-master-rel-6mww4-q6dbx[0m
+{"level":"info","ts":1590305212.8072526,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1590305213.2249997,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/nuxeo/**labs-nos-**l.git @ v0.0.194 in path /workspace/source"}
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-6mww4-11[0m stage [32mchart[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:67c9148e797f3c21f2bdbb5a7820631779b8efca
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-6mww4-11[0m stage [32mchart[0m and container [32mstep-container-build[0m
+2020/05/24 07:26:54 Error executing command: fork/exec /bin/sh: no such file or directory
+[31m
+Pipeline failed on stage 'chart' : container 'step-container-build'. The execution of the pipeline has stopped.[0m
