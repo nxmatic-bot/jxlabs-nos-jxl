@@ -1,0 +1,27 @@
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-mstlw-10[0m stage [32mchart[0m and container [32mstep-credential-initializer-j8pbd[0m
+{"level":"info","ts":1590283911.166134,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1590283911.1668584,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-mstlw-10[0m stage [32mchart[0m and container [32mstep-working-dir-initializer-nmvq9[0m
+{"level":"info","ts":1590283912.211127,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1590283912.2125874,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-mstlw-10[0m stage [32mchart[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-mstlw-10[0m stage [32mchart[0m and container [32mstep-git-source-nuxeo-jxlabs-nos-jxl-master-rel-mstlw-66jkb[0m
+{"level":"info","ts":1590283919.4694328,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1590283919.8260183,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/nuxeo/**labs-nos-**l.git @ v0.0.193 in path /workspace/source"}
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-mstlw-10[0m stage [32mchart[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:250fabec368eab8d0b20530c9bce17d3725ee069
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-rel-mstlw-10[0m stage [32mchart[0m and container [32mstep-container-build[0m
+E0524 01:32:01.641997      10 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+E0524 01:32:01.652662      10 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+E0524 01:32:01.655978      10 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+error checking push permissions -- make sure you entered the correct tag name, and that you are authenticated correctly, and try again: checking push permission for "//**labs-nos-**l:0.0.193": GET https://index.docker.io/v2/**labs-nos-**l/blobs/uploads/: UNAUTHORIZED: authentication required; [map[Action:pull Class: Name:**labs-nos-**l Type:repository]]
+[31m
+Pipeline failed on stage 'chart' : container 'step-container-build'. The execution of the pipeline has stopped.[0m
