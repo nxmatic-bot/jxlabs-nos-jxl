@@ -1,26 +1,32 @@
 
-Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-g7h72-4[0m stage [32mchart[0m and container [32mstep-credential-initializer-5c5g6[0m
-{"level":"info","ts":1590268343.6400187,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1590268343.640703,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-hhfwt-4[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-mxjwc[0m
+{"level":"info","ts":1591099728.867434,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1591099728.8691256,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-g7h72-4[0m stage [32mchart[0m and container [32mstep-working-dir-initializer-vt2vv[0m
-{"level":"info","ts":1590268344.2665343,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1590268344.2685108,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-hhfwt-4[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-mc682[0m
+{"level":"info","ts":1591099730.2990456,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1591099730.3002012,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-g7h72-4[0m stage [32mchart[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-hhfwt-4[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-g7h72-4[0m stage [32mchart[0m and container [32mstep-git-source-nuxeo-jxlabs-nos-jxl-master-g7h72-sfslk[0m
-{"level":"info","ts":1590268385.4384117,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1590268385.7901506,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/nuxeo/**labs-nos-**l.git @ v0.0.187 in path /workspace/source"}
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-hhfwt-4[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-nuxeo-jxlabs-nos-jxl-maste-hhfwt-88w5q[0m
+{"level":"info","ts":1591099736.508005,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1591099736.897538,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/nuxeo/**labs-nos-**l.git @ 49fbf4fb88396bc30b3cc5aad48d308c83535b46 in path /workspace/source"}
 
-Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-g7h72-4[0m stage [32mchart[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:447662fce4ab7c1bb9998403525ecb6de929bdb9
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-hhfwt-4[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:49fbf4fb88396bc30b3cc5aad48d308c83535b46
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mnuxeo-jxlabs-nos-jxl-master-g7h72-4[0m stage [32mchart[0m and container [32mstep-build-and-push-image[0m
-enabling GCP Service Account from /secrets/gcr/credentials.json
-ERROR: (gcloud.auth.activate-service-account) Unable to read file [/secrets/gcr/credentials.json]: [Errno 2] No such file or directory: '/secrets/gcr/credentials.json'
-building container image version: 0.0.187
-ERROR: (gcloud.builds.submit) User [129163454118-compute@developer.gserviceaccount.com] does not have permission to access b [jenkinsxio-labs_cloudbuild] (or it may not exist): 129163454118-compute@developer.gserviceaccount.com does not have storage.buckets.get access to the Google Cloud Storage bucket.
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-hhfwt-4[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-hhfwt-4[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Cloning the Jenkins X versions repo https://github.com/nuxeo/**labs-nos-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Effective pipeline written to jenkins-x-release-effective.yml
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-hhfwt-4[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+running command: ./next-version.sh
+/usr/bin/env: sh -ex: No such file or directory
+error: failed to set the version on release pipelines: failed to run '/bin/sh -c ./next-version.sh' command in directory '/workspace/source', output: ''
 [31m
-Pipeline failed on stage 'chart' : container 'step-build-and-push-image'. The execution of the pipeline has stopped.[0m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-tekton-crds'. The execution of the pipeline has stopped.[0m
