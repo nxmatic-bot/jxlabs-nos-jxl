@@ -1,0 +1,27 @@
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-9lsgv-34[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-x4cdj[0m
+{"level":"info","ts":1591270625.0977564,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1591270625.098561,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-9lsgv-34[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-hbcbg[0m
+{"level":"info","ts":1591270626.098159,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1591270626.1285703,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-9lsgv-34[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-9lsgv-34[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-nuxeo-jxlabs-nos-jxl-maste-9lsgv-8ntvl[0m
+{"level":"info","ts":1591270632.2073421,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1591270632.7432272,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/nuxeo/**labs-nos-**l.git @ f95ec968ff45c86816ab222747fd7a3948090b5f in path /workspace/source"}
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-9lsgv-34[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:f95ec968ff45c86816ab222747fd7a3948090b5f
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-9lsgv-34[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-9lsgv-34[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Cloning the Jenkins X versions repo https://github.com/nuxeo/**labs-nos-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+error: failed to load project config in dir /workspace/source: failed to validate YAML file /workspace/source/jenkins-x.yml due to yaml: line 11: mapping values are not allowed in this context
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-effective-pipeline'. The execution of the pipeline has stopped.[0m
