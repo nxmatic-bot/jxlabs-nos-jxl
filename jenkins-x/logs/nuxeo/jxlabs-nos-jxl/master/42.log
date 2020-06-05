@@ -1,0 +1,152 @@
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-6nkbq-42[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-62tl2[0m
+{"level":"info","ts":1591362446.1377892,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1591362446.1390884,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-6nkbq-42[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-dlgqj[0m
+{"level":"info","ts":1591362447.0054424,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1591362447.0155513,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-6nkbq-42[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-6nkbq-42[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-nuxeo-jxlabs-nos-jxl-maste-6nkbq-jcgsm[0m
+{"level":"info","ts":1591362453.242305,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1591362453.7847555,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/nuxeo/**labs-nos-**l.git @ 3aa2bebcbc09d474e750383e7a204a829d0fee4b in path /workspace/source"}
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-6nkbq-42[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:3aa2bebcbc09d474e750383e7a204a829d0fee4b
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-6nkbq-42[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-6nkbq-42[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Cloning the Jenkins X versions repo https://github.com/nuxeo/**labs-nos-versions.git with ref refs/heads/master to /builder/home/.**/jenkins-x-versions
+Effective pipeline written to jenkins-x-release-effective.yml
+
+Showing logs for build [32mmeta-nuxeo-jxlabs-nos-jxl-maste-6nkbq-42[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+running command: ./next-version.sh
++++ git rev-parse --is-shallow-repository
+++ true
+++ git fetch --unshallow
+From https://github.com/nuxeo/**labs-nos-**l
+ * [new branch]      bump-go-version-03162d4f-631e-11ea-abbc-7634b0a5c9be -> origin/bump-go-version-03162d4f-631e-11ea-abbc-7634b0a5c9be
+ * [new branch]      bump-go-version-0d53f44a-5fc6-11ea-93e7-02a0c16062c5 -> origin/bump-go-version-0d53f44a-5fc6-11ea-93e7-02a0c16062c5
+ * [new branch]      bump-go-version-286477a5-6397-11ea-8d67-82abf315f7e5 -> origin/bump-go-version-286477a5-6397-11ea-8d67-82abf315f7e5
+ * [new branch]      bump-go-version-294c73e8-5e1c-11ea-b074-86ebdbcd1465 -> origin/bump-go-version-294c73e8-5e1c-11ea-b074-86ebdbcd1465
+ * [new branch]      bump-go-version-2fdb62ba-743e-11ea-9bfb-6e38859fb617 -> origin/bump-go-version-2fdb62ba-743e-11ea-9bfb-6e38859fb617
+ * [new branch]      bump-go-version-35097bc6-5fa9-11ea-a16a-429654f742e7 -> origin/bump-go-version-35097bc6-5fa9-11ea-a16a-429654f742e7
+ * [new branch]      bump-go-version-387c2c8e-5c8b-11ea-81eb-aab2a3a347bb -> origin/bump-go-version-387c2c8e-5c8b-11ea-81eb-aab2a3a347bb
+ * [new branch]      bump-go-version-44c69d3f-6488-11ea-a79d-1aec5ee00d00 -> origin/bump-go-version-44c69d3f-6488-11ea-a79d-1aec5ee00d00
+ * [new branch]      bump-go-version-45397666-59f9-11ea-9f12-fabb6eed8841 -> origin/bump-go-version-45397666-59f9-11ea-9f12-fabb6eed8841
+ * [new branch]      bump-go-version-498e91c4-5973-11ea-a671-5a1b8906e313 -> origin/bump-go-version-498e91c4-5973-11ea-a671-5a1b8906e313
+ * [new branch]      bump-go-version-508966a6-58c4-11ea-81bd-66b30572851f -> origin/bump-go-version-508966a6-58c4-11ea-81bd-66b30572851f
+ * [new branch]      bump-go-version-5257e0b0-7891-11ea-8e1b-5ef46f2703dd -> origin/bump-go-version-5257e0b0-7891-11ea-8e1b-5ef46f2703dd
+ * [new branch]      bump-go-version-5fadc0e7-5c62-11ea-a817-4a8fccf526de -> origin/bump-go-version-5fadc0e7-5c62-11ea-a817-4a8fccf526de
+ * [new branch]      bump-go-version-68d6b86b-58e9-11ea-bb05-0a98180e31c6 -> origin/bump-go-version-68d6b86b-58e9-11ea-bb05-0a98180e31c6
+ * [new branch]      bump-go-version-6bd3db61-704a-11ea-a46d-7eff5d619c58 -> origin/bump-go-version-6bd3db61-704a-11ea-a46d-7eff5d619c58
+ * [new branch]      bump-go-version-7813bc38-77d7-11ea-aef5-728e89329b98 -> origin/bump-go-version-7813bc38-77d7-11ea-aef5-728e89329b98
+ * [new branch]      bump-go-version-88677062-62e6-11ea-9d1c-f22018ef7675 -> origin/bump-go-version-88677062-62e6-11ea-9d1c-f22018ef7675
+ * [new branch]      bump-go-version-88c4138c-5d9d-11ea-bf75-8a41bdf895b0 -> origin/bump-go-version-88c4138c-5d9d-11ea-bf75-8a41bdf895b0
+ * [new branch]      bump-go-version-917ec49f-75c5-11ea-a742-26b036a1c4ea -> origin/bump-go-version-917ec49f-75c5-11ea-a742-26b036a1c4ea
+ * [new branch]      bump-go-version-91b8f918-783e-11ea-95a7-2690c59bcf65 -> origin/bump-go-version-91b8f918-783e-11ea-95a7-2690c59bcf65
+ * [new branch]      bump-go-version-9f2a79d5-7817-11ea-89f4-d24c287110bc -> origin/bump-go-version-9f2a79d5-7817-11ea-89f4-d24c287110bc
+ * [new branch]      bump-go-version-9f4d1929-7261-11ea-b159-4688bfb799ca -> origin/bump-go-version-9f4d1929-7261-11ea-b159-4688bfb799ca
+ * [new branch]      bump-go-version-a2df4066-6f5f-11ea-a017-3a3cd1c17406 -> origin/bump-go-version-a2df4066-6f5f-11ea-a017-3a3cd1c17406
+ * [new branch]      bump-go-version-a6392fd0-70d8-11ea-929b-6e4e53f2c264 -> origin/bump-go-version-a6392fd0-70d8-11ea-929b-6e4e53f2c264
+ * [new branch]      bump-go-version-b04d452b-68f5-11ea-a28e-223ed5dccf5e -> origin/bump-go-version-b04d452b-68f5-11ea-a28e-223ed5dccf5e
+ * [new branch]      bump-go-version-b26f681d-597e-11ea-bb0d-4245e61d7ddf -> origin/bump-go-version-b26f681d-597e-11ea-bb0d-4245e61d7ddf
+ * [new branch]      bump-go-version-b8fef33a-5f7c-11ea-9409-ea7e707b1b2d -> origin/bump-go-version-b8fef33a-5f7c-11ea-9409-ea7e707b1b2d
+ * [new branch]      bump-go-version-c7dbf4f9-5d75-11ea-806f-0e144b5f64cb -> origin/bump-go-version-c7dbf4f9-5d75-11ea-806f-0e144b5f64cb
+ * [new branch]      bump-go-version-ce90f6a4-5d38-11ea-a365-e69d5172c543 -> origin/bump-go-version-ce90f6a4-5d38-11ea-a365-e69d5172c543
+ * [new branch]      bump-go-version-d3283ae8-62cd-11ea-b83a-56f5280c7c9b -> origin/bump-go-version-d3283ae8-62cd-11ea-b83a-56f5280c7c9b
+ * [new branch]      bump-go-version-e3739112-644c-11ea-b5b3-d60576050b1e -> origin/bump-go-version-e3739112-644c-11ea-b5b3-d60576050b1e
+ * [new branch]      bump-go-version-e3f91c50-58b6-11ea-a127-661127f30676 -> origin/bump-go-version-e3f91c50-58b6-11ea-a127-661127f30676
+ * [new branch]      bump-go-version-e59d774e-5873-11ea-a115-3664089c65ac -> origin/bump-go-version-e59d774e-5873-11ea-a115-3664089c65ac
+ * [new branch]      bump-go-version-e947589a-78b4-11ea-9dc9-9a046cccb023 -> origin/bump-go-version-e947589a-78b4-11ea-9dc9-9a046cccb023
+ * [new branch]      bump-go-version-e9ff4e50-5ec4-11ea-94b0-a2c2cb42562b -> origin/bump-go-version-e9ff4e50-5ec4-11ea-94b0-a2c2cb42562b
+ * [new branch]      bump-go-version-eb0921f8-729e-11ea-b487-daa15f40a736 -> origin/bump-go-version-eb0921f8-729e-11ea-b487-daa15f40a736
+ * [new branch]      bump-go-version-f0ce17e4-763b-11ea-99fa-2a0940b02a33 -> origin/bump-go-version-f0ce17e4-763b-11ea-99fa-2a0940b02a33
+ * [new branch]      bump-regex-version-0459fdda-6446-11ea-a10c-5aac8016c3a9 -> origin/bump-regex-version-0459fdda-6446-11ea-a10c-5aac8016c3a9
+ * [new branch]      bump-regex-version-16e4538f-6892-11ea-bfa9-ae5cf724fc73 -> origin/bump-regex-version-16e4538f-6892-11ea-bfa9-ae5cf724fc73
+ * [new branch]      bump-regex-version-22ec28b1-70df-11ea-bc8d-96c0ad286a78 -> origin/bump-regex-version-22ec28b1-70df-11ea-bc8d-96c0ad286a78
+ * [new branch]      bump-regex-version-3a135c0a-78b5-11ea-82e5-226f71896eb8 -> origin/bump-regex-version-3a135c0a-78b5-11ea-82e5-226f71896eb8
+ * [new branch]      bump-regex-version-3b4b0035-744c-11ea-a393-8e33a2a8a6d3 -> origin/bump-regex-version-3b4b0035-744c-11ea-a393-8e33a2a8a6d3
+ * [new branch]      bump-regex-version-413b9fd1-6d15-11ea-a49e-2e713ad468bf -> origin/bump-regex-version-413b9fd1-6d15-11ea-a49e-2e713ad468bf
+ * [new branch]      bump-regex-version-50516982-6878-11ea-841c-5ed25b43984f -> origin/bump-regex-version-50516982-6878-11ea-841c-5ed25b43984f
+ * [new branch]      bump-regex-version-52af796c-6867-11ea-b408-3e5f0ca1be8a -> origin/bump-regex-version-52af796c-6867-11ea-b408-3e5f0ca1be8a
+ * [new branch]      bump-regex-version-547ae738-5973-11ea-93f7-5a1b8906e313 -> origin/bump-regex-version-547ae738-5973-11ea-93f7-5a1b8906e313
+ * [new branch]      bump-regex-version-57e4bdc9-5d3a-11ea-9496-ead977caef89 -> origin/bump-regex-version-57e4bdc9-5d3a-11ea-9496-ead977caef89
+ * [new branch]      bump-regex-version-67a0b6bb-77cf-11ea-802e-227e872bb767 -> origin/bump-regex-version-67a0b6bb-77cf-11ea-802e-227e872bb767
+ * [new branch]      bump-regex-version-71b91b04-6e9e-11ea-88a5-2a3f2be6e655 -> origin/bump-regex-version-71b91b04-6e9e-11ea-88a5-2a3f2be6e655
+ * [new branch]      bump-regex-version-72f9c30c-78c5-11ea-9b8f-ea694eb28bf2 -> origin/bump-regex-version-72f9c30c-78c5-11ea-9b8f-ea694eb28bf2
+ * [new branch]      bump-regex-version-79f10917-7004-11ea-8aab-06f4674a86a9 -> origin/bump-regex-version-79f10917-7004-11ea-8aab-06f4674a86a9
+ * [new branch]      bump-regex-version-7cb034ee-6922-11ea-97a6-8291e4d71e35 -> origin/bump-regex-version-7cb034ee-6922-11ea-97a6-8291e4d71e35
+ * [new branch]      bump-regex-version-7f4d4587-6f30-11ea-9a94-de733c5b4455 -> origin/bump-regex-version-7f4d4587-6f30-11ea-9a94-de733c5b4455
+ * [new branch]      bump-regex-version-84613ad3-704d-11ea-9567-066583914d00 -> origin/bump-regex-version-84613ad3-704d-11ea-9567-066583914d00
+ * [new branch]      bump-regex-version-88cc58fa-6477-11ea-a946-e2120b3d43fc -> origin/bump-regex-version-88cc58fa-6477-11ea-a946-e2120b3d43fc
+ * [new branch]      bump-regex-version-93760367-6933-11ea-a774-168bb7409e05 -> origin/bump-regex-version-93760367-6933-11ea-a774-168bb7409e05
+ * [new branch]      bump-regex-version-99b426d3-646d-11ea-8f81-1229cf1e9f7f -> origin/bump-regex-version-99b426d3-646d-11ea-8f81-1229cf1e9f7f
+ * [new branch]      bump-regex-version-a88dcc48-6f60-11ea-847e-d665e726dff9 -> origin/bump-regex-version-a88dcc48-6f60-11ea-847e-d665e726dff9
+ * [new branch]      bump-regex-version-a88e3330-5f87-11ea-b21c-d24ba0259375 -> origin/bump-regex-version-a88e3330-5f87-11ea-b21c-d24ba0259375
+ * [new branch]      bump-regex-version-bcf69d1a-6d25-11ea-b42d-aa69148cde89 -> origin/bump-regex-version-bcf69d1a-6d25-11ea-b42d-aa69148cde89
+ * [new branch]      bump-regex-version-bd616df4-6f22-11ea-901c-066ffee8b89c -> origin/bump-regex-version-bd616df4-6f22-11ea-901c-066ffee8b89c
+ * [new branch]      bump-regex-version-d43dc669-6486-11ea-8bed-0a17313bb708 -> origin/bump-regex-version-d43dc669-6486-11ea-8bed-0a17313bb708
+ * [new branch]      bump-regex-version-d928524e-7839-11ea-ac70-f6fdba60351c -> origin/bump-regex-version-d928524e-7839-11ea-ac70-f6fdba60351c
+ * [new branch]      bump-regex-version-fde623c0-68f1-11ea-843f-c2ab9fff3baf -> origin/bump-regex-version-fde623c0-68f1-11ea-843f-c2ab9fff3baf
+ * [new branch]      bump-regex-version-fe931538-725d-11ea-bc42-5abc53c0282d -> origin/bump-regex-version-fe931538-725d-11ea-bc42-5abc53c0282d
+ * [new branch]      bump-regex-version-feaf0869-685f-11ea-9ee2-baecc6b4110a -> origin/bump-regex-version-feaf0869-685f-11ea-9ee2-baecc6b4110a
+ * [new branch]      changes           -> origin/changes
+ * [new branch]      chgang            -> origin/chgang
+ * [new branch]      gh-pages          -> origin/gh-pages
+ * [new branch]      jstrachan-patch-1 -> origin/jstrachan-patch-1
+ * [new branch]      **labs-nos        -> origin/**labs-nos
+ * [new branch]      master            -> origin/master
+ * [new branch]      rawlingsj-patch-1 -> origin/rawlingsj-patch-1
+ * [new tag]         0.0.183-**labs-nos-3 -> 0.0.183-**labs-nos-3
+ * [new tag]         0.0.183-**labs-nos-4 -> 0.0.183-**labs-nos-4
+ * [new tag]         0.0.183-**labs-nos-5 -> 0.0.183-**labs-nos-5
+ * [new tag]         v0.0.183             -> v0.0.183
+++ git fetch origin --tags
+From https://github.com/nuxeo/**labs-nos-**l
+ * [new tag]         0.0.183-**labs-nos-6  -> 0.0.183-**labs-nos-6
+ * [new tag]         0.0.183-**labs-nos-7  -> 0.0.183-**labs-nos-7
+ * [new tag]         0.0.183-**labs-nos-8  -> 0.0.183-**labs-nos-8
+ * [new tag]         v0.0.183-**labs-nos-1 -> v0.0.183-**labs-nos-1
+ * [new tag]         v0.0.183-**labs-nos-3 -> v0.0.183-**labs-nos-3
+ * [new tag]         v0.0.183-**labs-nos-4 -> v0.0.183-**labs-nos-4
+ * [new tag]         v0.0.183-**labs-nos-5 -> v0.0.183-**labs-nos-5
+ * [new tag]         v0.0.183-**labs-nos-6 -> v0.0.183-**labs-nos-6
+ * [new tag]         v0.0.183-**labs-nos-7 -> v0.0.183-**labs-nos-7
+ * [new tag]         v0.0.183-**labs-nos-8 -> v0.0.183-**labs-nos-8
+++++ git describe --abbrev=0 '--match=v[0-9]*.[0-9]*.[0-9]*[!-]*'
++++ expr v0.0.183 : 'v\(.*\)'
+++ up=0.0.183
++++ git describe --abbrev=0 --tags '--match=0.0.183-**labs-nos-*'
+++ last=0.0.183-**labs-nos-5
+++ '[' 0 -eq 0 ']'
+++++ expr 0.0.183-**labs-nos-5 : '0.0.183-**labs-nos-\(.*\)'
++++ expr 5 + 1
+++ next=6
+++ version=0.0.183-**labs-nos-6
+++ git tag 0.0.183-**labs-nos-6
+fatal: tag '0.0.183-**labs-nos-6' already exists
+++ git push origin 0.0.183-**labs-nos-6
+Everything up-to-date
+++ echo 0.0.183-**labs-nos-6
+
+running command: ** step tag --charts-value-repository=gcr.io/build-**-prod/**labs-nos/**l-boot --version=\$(cat VERSION)
+Updating chart version in charts/**l-boot/Chart.yaml to 0.0.183-**labs-nos-6
+Updating repository in charts/**l-boot/values.yaml to gcr.io/build-**-prod/**labs-nos/**l-boot
+Updating tag in charts/**l-boot/values.yaml to 0.0.183-**labs-nos-6
+error: Have you set up a git credential helper? See https://help.github.com/articles/caching-your-github-password-in-git/
+: git output: To https://github.com/nuxeo/**labs-nos-**l.git
+ ! [rejected]        v0.0.183-**labs-nos-6 -> v0.0.183-**labs-nos-6 (already exists)
+error: failed to push some refs to 'https://github.com/nuxeo/**labs-nos-**l.git'
+hint: Updates were rejected because the tag already exists in the remote.: failed to run 'git push origin v0.0.183-**labs-nos-6' command in directory '', output: 'To https://github.com/nuxeo/**labs-nos-**l.git
+ ! [rejected]        v0.0.183-**labs-nos-6 -> v0.0.183-**labs-nos-6 (already exists)
+error: failed to push some refs to 'https://github.com/nuxeo/**labs-nos-**l.git'
+hint: Updates were rejected because the tag already exists in the remote.'
+error: failed to set the version on release pipelines: failed to run '/bin/sh -c ** step tag --charts-value-repository=gcr.io/build-**-prod/**labs-nos/**l-boot --version=$(cat VERSION)' command in directory '/workspace/source', output: ''
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-tekton-crds'. The execution of the pipeline has stopped.[0m
